@@ -7,17 +7,18 @@ snippet uni
 	def __unicode__(self):
 		${0:representation}
 snippet from
-	from ${1:package} import ${0:module}
+	f rom ${1:package} import ${0:module}
 # Module Docstring
 snippet docs
 	"""
-	File: ${1:`vim_snippets#Filename('$1.py', 'foo.py')`}
-	Author: `g:snips_author`
-	Email: `g:snips_email`
-	Github: `g:snips_github`
-	Description: ${0}
-	"""
+		${1:`vim_snippets#Filename('$1.py', 'foo.py')`}
+		~~~~~
 
+		${0}	
+	
+		:copyright: (c) 2014 by `g:snips_author`.
+		:license: BSD, see LICENSE for more details.
+	"""
 snippet wh
 	while ${1:condition}:
 		${0}
